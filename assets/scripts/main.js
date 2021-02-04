@@ -72,8 +72,8 @@ document.getElementById("radio-party-horn").addEventListener("change", function(
 
 
 document.getElementById("honk-btn").addEventListener("click", function(){
+    event.preventDefault();
+    document.getElementById("horn-sound").play();
     
-    var audio = new Audio('./assets/media/audio/air-horn.mp3');
-    audio.play();
 
 })
