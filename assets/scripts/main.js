@@ -69,9 +69,9 @@ document.getElementById("radio-party-horn").addEventListener("change", function(
 }) 
 
 
-var form = document.querySelector("form");
 
-form.addEventListener("submit", function(){
+
+document.getElementById("honk-btn").addEventListener("click", function(){
     
     var audio = new Audio('./assets/media/audio/air-horn.mp3');
     audio.play();
